@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="finder" method="upgrade">
+    <name>plg_finder_excludearchived</name>
+    <author>Daniel - web-eau.net</author>
+    <creationDate>2026-11</creationDate>
+    <copyright>(C) 2026 web-eau.net</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorUrl>https://www.web-eau.net</authorUrl>
+    <changelogurl>https://raw.githubusercontent.com/web-eau-net/plg_finder_excludearchived/main/changelog.xml</changelogurl>
+    <version>1.0.0</version>
+    <description>PLG_FINDER_EXCLUDEARCHIVED_XML_DESCRIPTION</description>
+    <namespace path="src">Webeau\Plugin\Finder\ExcludeArchived</namespace>
+    <files>
+        <folder plugin="excludearchived">services</folder>
+        <folder>src</folder>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/plg_finder_excludearchived.ini</language>
+        <language tag="en-GB">en-GB/plg_finder_excludearchived.sys.ini</language>
+        <language tag="fr-FR">fr-FR/plg_finder_excludearchived.ini</language>
+        <language tag="fr-FR">fr-FR/plg_finder_excludearchived.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="catids"
+                    type="category"
+                    extension="com_content"
+                    multiple="true"
+                    layout="joomla.form.field.list-fancy-select"
+                    label="PLG_FINDER_EXCLUDEARCHIVED_FIELD_CATIDS_LABEL"
+                    description="PLG_FINDER_EXCLUDEARCHIVED_FIELD_CATIDS_DESC"
+                />
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="Smart Search - Exclude Archived">https://raw.githubusercontent.com/web-eau-net/plg_finder_excludearchived/main/updates.xml</server>
+    </updateservers>
+</extension>

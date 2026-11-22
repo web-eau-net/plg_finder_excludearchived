@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>excludearchived</element>
+        <type>plugin</type>
+        <version>1.0.0</version>
+        <addition>
+            <item>Archived articles are excluded from Smart Search results, at index time and when articles are archived.</item>
+            <item>Optional restriction to selected categories.</item>
+            <item>Joomla 4.4, 5 and 6 support; English and French language files.</item>
+        </addition>
+    </changelog>
+</changelogs>
